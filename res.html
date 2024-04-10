@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Swift Reservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/564x/3c/c5/a8/3cc5a80caa03584e8ef90a5d47b24929.jpg');
+        }
+
+        header {
+            background-image: url('https://i.pinimg.com/564x/87/95/93/879593e1b0816f9bed068432dc9f86c9.jpg');
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #d3d3d3;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            transition: border-color 0.3s ease;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            border-color: #4CAF50;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ccc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Taylor Swift Reservation</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="albums.html">Albums</a></li>
+            <li><a href="ticket.html">Ticket</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="inquiry.html">Inquire</a></li>
+			<li><a href="res.html">Reservation</a></li>
+			<li><a href="log.html">Log in</a></li>
+			<li><a href="pay.html">Payment</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Reservation Form</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="reservation_code">Reservation Code:</label>
+            <input type="text" id="reservation_code" name="reservation_code" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
